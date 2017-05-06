@@ -1,6 +1,6 @@
 // The book data
 var KronoriumSource = '';
-var CurrentLanguage = 'en';
+var CurrentLanguage = 'pl';
 
 // TODO: Images
 // TODO: Language selector
