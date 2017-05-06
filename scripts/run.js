@@ -19,7 +19,7 @@ var FlipSound = null;
 var validLanguages = [ // Add languages here
     //code  fullname  percentage
     ['en', 'English', 100],
-    ['pl', 'Polski', 1]
+    ['pl', 'Polski', 3]
 ];
 
 function isLanguageValid(lang) {
