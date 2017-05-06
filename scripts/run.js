@@ -1,6 +1,9 @@
 // The book data
 var KronoriumSource = '';
 var CurrentLanguage = 'en';
+var CurrentLanguageIndex = 0;
+
+var UseExtendedPage = false;
 
 // TODO: Images
 // TODO: Language selector
@@ -17,9 +20,9 @@ var CloseSound = null;
 var FlipSound = null;
 
 var validLanguages = [ // Add languages here
-    //code  fullname  percentage
-    ['en', 'English', 100],
-    ['pl', 'Polski', 3]
+    //code  fullname  percentage  requireLarger
+    ['en', 'English', 100, false],
+    ['pl', 'Polski', 3, true]
 ];
 
 function isLanguageValid(lang) {
@@ -27,10 +30,14 @@ function isLanguageValid(lang) {
 }
 
 function addLanguage(item, index) {
+    var result = '<a href="?lang=' + item[0] + '&useExtendedPage=' + item[3].toString() + '">' + item[1];
+
     if (item[2] < 100)
-        $("#language-menu").append('<a href="?lang=' + item[0] + '">' + item[1] + ' (' + item[2] + '%)</a><br/>');
-    else
-        $("#language-menu").append('<a href="?lang=' + item[0] + '">' + item[1] + '</a><br/>');
+        result += ' (' + item[2] + '%)';
+
+    result += '</a><br/>';
+
+    $("#language-menu").append(result);
 }
 
 $(document).ready(function() {
@@ -46,8 +53,12 @@ $(document).ready(function() {
         CurrentLanguage = 'en';
 
     // Check if language is in valid languages array
-    if (!isLanguageValid(CurrentLanguage))
+    if (!isLanguageValid(CurrentLanguage)) {
         CurrentLanguage = 'en';
+    }
+
+    // See if we're using extended page size
+    UseExtendedPage = (getParameterByName("useExtendedPage") == "true" ? true : false);
 
     // We must load the specific JSON source for our language
     $.get(('data/' + CurrentLanguage + '/story.json'), BeginLoad).fail(DisplayFail);
@@ -178,13 +189,25 @@ function SetupPage() {
     // Backing
     $('#kronorium').append('<div class="hard" style="background-image:url(images/binding_end.png)"></div>');
     // Initialize the book
-    $("#kronorium").turn({
-        width: 922,
-        height: 700,
-        elevation: 50,
-        gradients: false,
-        autoCenter: true
-    });
+    if (UseExtendedPage) {
+        $("#viewport").attr("class", "flipbook-viewport-extended");
+        $("#kronorium").turn({
+            width: 998,
+            height: 650,
+            elevation: 50,
+            gradients: false,
+            autoCenter: true
+        });
+    } else {
+        $("#viewport").attr("class", "flipbook-viewport");
+        $("#kronorium").turn({
+            width: 922,
+            height: 600,
+            elevation: 50,
+            gradients: false,
+            autoCenter: true
+        });
+    }
     // Disable it for the opening effect
     $("#kronorium").turn("disable", true);
 }
