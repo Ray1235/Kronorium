@@ -1,19 +1,19 @@
 body {
     overflow: hidden;
-    background-color: #101010;
+    background-color: #000000;
     background-repeat: no-repeat;
     font-family: 'Kaushan Script', cursive;
-    color: #242520;
+    color: #0d0301;
     margin: 0;
     padding: 0;
 }
 
-body.alt-font {
-    font-family: 'Calibri', cursive;
+a {
+    color: #494c3d;
 }
 
-a {
-    color: #242520;
+body.alt-font {
+    font-family: 'Calibri', cursive;
 }
 
 .language-menu {
@@ -24,6 +24,10 @@ a {
 .language-menu>a {
     color: #fff;
     text-decoration: none;
+}
+
+a:hover {
+    color: rgb(222, 224, 212);
 }
 
 .hide {
@@ -59,9 +63,14 @@ a {
 }
 
 .flipbook-viewport {
+    <<<<<<< HEAD overflow: hidden;
+    width: 100%;
+    height: 100%;
+    =======position: absolute;
     overflow: hidden;
     width: 100%;
     height: 100%;
+    >>>>>>>3d360cb906282a87dc1d9f1ae4d3ad665b348cd9
 }
 
 .flipbook-viewport .container {
@@ -87,7 +96,7 @@ a {
 }
 
 .flipbook-viewport .page img {
-    -webkit-touch-callout: none;
+    <<<<<<< HEAD -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -133,3 +142,18 @@ a {
     user-select: none;
     margin: 0;
 }
+
+=======-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+margin:0;
+
+}
+#kronorium {
+    position: absolute !important;
+    margin: 0 auto;
+}
+>>>>>>>3d360cb906282a87dc1d9f1ae4d3ad665b348cd9
