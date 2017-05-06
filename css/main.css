@@ -14,6 +14,7 @@ a {
 
 .language-menu {
     color: #fff;
+    float: left;
 }
 
 .language-menu>a {
