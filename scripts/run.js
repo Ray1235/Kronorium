@@ -180,7 +180,7 @@ function SetupPage() {
     // Initialize the book
     $("#kronorium").turn({
         width: 922,
-        height: 600,
+        height: 700,
         elevation: 50,
         gradients: false,
         autoCenter: true
