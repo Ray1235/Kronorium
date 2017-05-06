@@ -17,7 +17,7 @@ var CloseSound = null;
 var FlipSound = null;
 
 var validLanguages = [ // Add languages here
-    //code  full name
+    //code  fullname  percentage
     ['en', 'English', 100],
     ['pl', 'Polski', 10]
 ];
