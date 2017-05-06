@@ -1,6 +1,6 @@
 // The book data
 var KronoriumSource = '';
-var CurrentLanguage = 'pl';
+var CurrentLanguage = 'en';
 
 // TODO: Images
 // TODO: Language selector
@@ -16,7 +16,36 @@ var OpenSound = null;
 var CloseSound = null;
 var FlipSound = null;
 
+var validLanguages = [ // Add languages here
+    //code  full name
+    ['en', 'English'],
+    ['pl', 'Polski']
+];
+
+function isLanguageValid(lang) {
+    return true;
+}
+
+function addLanguage(item, index) {
+    $("#language-menu").append('<a href="?lang=' + item[0] + '">' + item[1] + '</a><br/>');
+}
+
 $(document).ready(function() {
+    // Add valid languages to language menu
+    $("#language-menu").html(""); // clear that first
+    validLanguages.forEach(addLanguage);
+
+    // Set language based on URL, default is English
+    CurrentLanguage = getParameterByName("lang");
+
+    // Is lang parameter set in URL?
+    if (CurrentLanguage == '' || CurrentLanguage == null)
+        CurrentLanguage = 'en';
+
+    // Check if language is in valid languages array
+    if (!isLanguageValid(CurrentLanguage))
+        CurrentLanguage = 'en';
+
     // We must load the specific JSON source for our language
     $.get(('data/' + CurrentLanguage + '/story.json'), BeginLoad).fail(DisplayFail);
 });
@@ -178,4 +207,15 @@ function EnableBookOpen() {
         // If we turned, we can play it (Unless to closed, (figure out a better closed sound))
         if (page > 2) { FlipSound.play(); }
     });
+}
+
+// Thanks stack overflow!
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
