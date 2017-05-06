@@ -18,8 +18,8 @@ var FlipSound = null;
 
 var validLanguages = [ // Add languages here
     //code  full name
-    ['en', 'English'],
-    ['pl', 'Polski']
+    ['en', 'English', 100],
+    ['pl', 'Polski', 10]
 ];
 
 function isLanguageValid(lang) {
@@ -27,7 +27,10 @@ function isLanguageValid(lang) {
 }
 
 function addLanguage(item, index) {
-    $("#language-menu").append('<a href="?lang=' + item[0] + '">' + item[1] + '</a><br/>');
+    if (item[2] < 100)
+        $("#language-menu").append('<a href="?lang=' + item[0] + '">' + item[1] + ' (' + item[2] + '%)</a><br/>');
+    else
+        $("#language-menu").append('<a href="?lang=' + item[0] + '">' + item[1] + '</a><br/>');
 }
 
 $(document).ready(function() {
