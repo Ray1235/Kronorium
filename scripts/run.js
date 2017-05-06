@@ -47,9 +47,11 @@ $(document).ready(function() {
 
     // Set language based on URL, default is English
     CurrentLanguageIndex = parseInt(getParameterByName("lang"));
+    console.log("Language index is " + CurrentLanguageIndex.toString());
 
     // Check if language is in valid languages array
     if (!isLanguageValid(CurrentLanguageIndex)) {
+        console.log("Language invalid, setting to 0");
         CurrentLanguageIndex = 0;
     }
 
