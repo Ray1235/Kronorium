@@ -3,7 +3,8 @@ var KronoriumSource = '';
 var CurrentLanguage = 'en';
 var CurrentLanguageIndex = 0; // Index 0 should always be English
 
-var UseExtendedPage = false;
+var UseLargerPage = false;
+var UseAltFont = false;
 
 // TODO: Images
 // TODO: Language selector
@@ -13,6 +14,14 @@ var UseExtendedPage = false;
 // Make sure pages don't overflow! Use images if necessary to fill gaps.
 // TRIPLE CHECK THAT YOU DIDN'T MISS AN ENTRY!!
 // Recommended for data editing: http://www.jsoneditoronline.org/
+/*************************
+ Adding a new language:
+    1) Add an entry to validLanguages array as follows
+    [ codename, full name, percentage finished, use larger page ]
+    !!!! USE LARGER PAGE ONLY IF YOUR TRANSLATION OVERFLOWS !!!!
+    2) Create a folder in data with same name as codename you specified earlier
+    3) Copy index.html, credits.html and story.json from "data/en" to your language's folder
+**************************/
 
 // Load sounds (Open / close / flip)
 var OpenSound = null;
@@ -20,7 +29,7 @@ var CloseSound = null;
 var FlipSound = null;
 
 var validLanguages = [ // Add languages here
-    //code  fullname  percentage  requireLarger
+    //code  fullname  percentage  UseLargerPage
     ['en', 'English', 100, false],
     ['pl', 'Polski', 3, true]
 ];
@@ -30,7 +39,7 @@ function isLanguageValid(lang) {
 }
 
 function addLanguage(item, index) {
-    var result = '<a href="?lang=' + index.toString() + '">' + item[1]; // + item[0] + '&useExtendedPage=' + item[3].toString() + '">' + item[1];
+    var result = '<a href="?lang=' + index.toString() + '&altfont=' + (UseAltFont ? '1' : '0') + '">' + item[1]; // + item[0] + '&UseLargerPage=' + item[3].toString() + '">' + item[1];
 
     if (item[2] < 100)
         result += ' (' + item[2] + '%)';
@@ -41,6 +50,9 @@ function addLanguage(item, index) {
 }
 
 $(document).ready(function() {
+    // Check for alt-font
+    UseAltFont = (parseInt(getParameterByName("altfont")) > 0 ? true : false);
+
     // Add valid languages to language menu
     $("#language-menu").html(""); // clear that first
     validLanguages.forEach(addLanguage);
@@ -56,7 +68,7 @@ $(document).ready(function() {
     }
 
     CurrentLanguage = validLanguages[CurrentLanguageIndex][0];
-    UseExtendedPage = validLanguages[CurrentLanguageIndex][3];
+    UseLargerPage = validLanguages[CurrentLanguageIndex][3];
 
     // We must load the specific JSON source for our language
     $.get(('data/' + CurrentLanguage + '/story.json'), BeginLoad).fail(DisplayFail);
@@ -146,6 +158,8 @@ function SetupPage() {
     // Unhide them
     $('#credits-inject').removeClass('hide');
     $('#index-inject').removeClass('hide');
+
+    if (UseAltFont) $('body').addClass('alt-font');
     // Credits / Index
     BeginLoadCreditsIndex();
     // Current page type (right, then left) (0, 1)
@@ -187,7 +201,7 @@ function SetupPage() {
     // Backing
     $('#kronorium').append('<div class="hard" style="background-image:url(images/binding_end.png)"></div>');
     // Initialize the book
-    if (UseExtendedPage) {
+    if (UseLargerPage) {
         $("#viewport").attr("class", "flipbook-viewport-extended");
         $("#kronorium").turn({
             width: 998,

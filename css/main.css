@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+body.alt-font {
+    font-family: 'Calibri', cursive;
+}
+
 a {
     color: #242520;
 }
