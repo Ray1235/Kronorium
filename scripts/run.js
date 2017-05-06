@@ -16,15 +16,14 @@ var OpenSound = null;
 var CloseSound = null;
 var FlipSound = null;
 
-$(document).ready(function()
-{
+$(document).ready(function() {
     // We must load the specific JSON source for our language
     $.get(('data/' + CurrentLanguage + '/story.json'), BeginLoad).fail(DisplayFail);
 });
 
 function DisplayFail() {
     // TODO: Display an error that we couldn't load the defs
-
+    $("#kronorium").html("Errors happened while initializing.");
 }
 
 function SetupArrowKeys() {
@@ -33,12 +32,13 @@ function SetupArrowKeys() {
         // Check key
         switch (e.which) {
             case 37: // left / go back
-            $("#kronorium").turn("previous");
-            break;
+                $("#kronorium").turn("previous");
+                break;
             case 39: // right / go forward
-            $("#kronorium").turn("next");
-            break;
-            default: return; // cancel for other keys
+                $("#kronorium").turn("next");
+                break;
+            default:
+                return; // cancel for other keys
         }
         // Stop default action
         e.preventDefault();
@@ -49,8 +49,7 @@ function BeginLoad(data) {
     // Set it
     if (typeof data === 'string') {
         KronoriumSource = JSON.parse(data);
-    }
-    else {
+    } else {
         KronoriumSource = data;
     }
     // Setup page
@@ -112,29 +111,23 @@ function SetupPage() {
     var PageType = 0;
     var PageCount = 0;
     // Loop through book data
-    for (var page in KronoriumSource)
-    {
+    for (var page in KronoriumSource) {
         var BuiltSource = '';
         // Determine page side
         if (PageType == 0) {
             BuiltSource += '<div style="background-image:url(images/page_right.png)"><div class="kron-base-right">';
             PageType = 1;
-        }
-        else {
+        } else {
             BuiltSource += '<div style="background-image:url(images/page_left.png)"><div class="kron-base-left">';
             PageType = 0;
         }
         // Build events
-        for (var i = 0; i < KronoriumSource[page].length; i++)
-        {
+        for (var i = 0; i < KronoriumSource[page].length; i++) {
             // Check if it's an image
-            if (KronoriumSource[page][i].hasOwnProperty('img'))
-            {
+            if (KronoriumSource[page][i].hasOwnProperty('img')) {
                 // Embed an image here
                 BuiltSource += KronoriumSource[page][i]['img'];
-            }
-            else
-            {
+            } else {
                 // Normal source
                 BuiltSource += '<h3 class="date-head">' + KronoriumSource[page][i]['date'] + '</h3>';
                 BuiltSource += '<p class="event-text">' + KronoriumSource[page][i]['event'] + '</p>';
@@ -146,22 +139,20 @@ function SetupPage() {
         $('#kronorium').append(BuiltSource + '</div></div>');
     }
     // Check to add a blank page
-    if (PageCount % 2 != 0)
-    {
+    if (PageCount % 2 != 0) {
         // Add blank
         $('#kronorium').append('<div style="background-image:url(images/page_left.png)"></div>');
     }
     // Backing
     $('#kronorium').append('<div class="hard" style="background-image:url(images/binding_end.png)"></div>');
     // Initialize the book
-    $("#kronorium").turn(
-    {
+    $("#kronorium").turn({
         width: 922,
         height: 600,
         elevation: 50,
         gradients: false,
         autoCenter: true
-	});
+    });
     // Disable it for the opening effect
     $("#kronorium").turn("disable", true);
 }
@@ -183,8 +174,7 @@ function EnableBookOpen() {
     // Turn
     $("#kronorium").turn("page", 2);
     // Hook page turning
-    $("#kronorium").bind("turning", function(event, page, view)
-    {
+    $("#kronorium").bind("turning", function(event, page, view) {
         // If we turned, we can play it (Unless to closed, (figure out a better closed sound))
         if (page > 2) { FlipSound.play(); }
     });
