@@ -30,7 +30,7 @@ function isLanguageValid(lang) {
 }
 
 function addLanguage(item, index) {
-    var result = '<a href="?lang=' + index.toString() + '">'; // + item[0] + '&useExtendedPage=' + item[3].toString() + '">' + item[1];
+    var result = '<a href="?lang=' + index.toString() + '">' + item[0]; // + item[0] + '&useExtendedPage=' + item[3].toString() + '">' + item[1];
 
     if (item[2] < 100)
         result += ' (' + item[2] + '%)';
