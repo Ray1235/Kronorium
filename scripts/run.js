@@ -1,7 +1,7 @@
 // The book data
 var KronoriumSource = '';
 var CurrentLanguage = 'en';
-var CurrentLanguageIndex = 0;
+var CurrentLanguageIndex = 0; // Index 0 should always be English
 
 var UseExtendedPage = false;
 
@@ -26,11 +26,11 @@ var validLanguages = [ // Add languages here
 ];
 
 function isLanguageValid(lang) {
-    return true;
+    return (lang < validLanguages.length && lang >= 0 ? true : false);
 }
 
 function addLanguage(item, index) {
-    var result = '<a href="?lang=' + item[0] + '&useExtendedPage=' + item[3].toString() + '">' + item[1];
+    var result = '<a href="?lang=' + index.toString() + '">'; // + item[0] + '&useExtendedPage=' + item[3].toString() + '">' + item[1];
 
     if (item[2] < 100)
         result += ' (' + item[2] + '%)';
@@ -46,19 +46,15 @@ $(document).ready(function() {
     validLanguages.forEach(addLanguage);
 
     // Set language based on URL, default is English
-    CurrentLanguage = getParameterByName("lang");
-
-    // Is lang parameter set in URL?
-    if (CurrentLanguage == '' || CurrentLanguage == null)
-        CurrentLanguage = 'en';
+    CurrentLanguageIndex = parseInt(getParameterByName("lang"));
 
     // Check if language is in valid languages array
-    if (!isLanguageValid(CurrentLanguage)) {
-        CurrentLanguage = 'en';
+    if (!isLanguageValid(CurrentLanguageIndex)) {
+        CurrentLanguageIndex = 0;
     }
 
-    // See if we're using extended page size
-    UseExtendedPage = (getParameterByName("useExtendedPage") == "true" ? true : false);
+    CurrentLanguage = validLanguages[CurrentLanguageIndex][0];
+    UseExtendedPage = validLanguages[CurrentLanguageIndex][3];
 
     // We must load the specific JSON source for our language
     $.get(('data/' + CurrentLanguage + '/story.json'), BeginLoad).fail(DisplayFail);
