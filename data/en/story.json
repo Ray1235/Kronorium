@@ -19,7 +19,7 @@
   ],
   "1": [
     {
-      "date": "DECEMBER 32ST, 1299",
+      "date": "DECEMBER 31ST, 1299",
       "event": "Together with the Keepers, Primis defeats the Apothicons, bringing the Great War to an end."
     },
     {
@@ -87,10 +87,6 @@
     {
       "date": "NOVEMBER 23RD, 1939",
       "event": "Maxis turns to the Reichstag for additional fundraising. Germany agrees to the request, expressing interest in their weapons research, teleportation technology, and the reanimated undead subjects."
-    },
-    {
-      "date": "DECEMBER 4TH, 1939",
-      "event": "During Test Trial 151, Richtofen and Doctor Schuster successfully teleport a walnut. This is first successful test where the chemical composition of the object is maintained throughout the process."
     }
   ],
   "5": [
@@ -148,19 +144,23 @@
       "event": "Group 935 establishes a research facility in Siberia near the Tunguska River."
     },
     {
+      "date": "NOVEMBER 6TH, 1940",
+      "event": "Group 935 establishes a research facility at Der Eisendrache."
+    },
+    {
       "date": "JUNE 24TH, 1941",
       "event": "Nikolai Belinski’s wife is killed during the German advance into the Soviet Union. In an effort to numb the pain, Nikolai increasingly turns to Vodka."
     },
     {
       "date": "JANUARY 11TH 1942",
       "event": "Maxis gives Fluffy to Samantha. The dog is expecting a litter."
-    },
-    {
-      "date": "JANUARY 20TH 1942",
-      "event": "Maxis tests the first file for storage on the data servant."
     }
   ],
   "9": [
+    {
+      "date": "JANUARY 20TH 1942",
+      "event": "Maxis tests the first file for storage on the data servant."
+    },
     {
       "date": "JANUARY 26TH 1942",
       "event": "On the data servant, Maxis catalogs locations with prominent Element 115 deposits. He includes information about its various applications and cities that the reanimation of dead cells is a possible side effect."
@@ -172,13 +172,13 @@
     {
       "date": "FEBRUARY 1ST 1942",
       "event": "With Griffin Station completed Richtofen names Doctor Groph lead scientist and returns to Earth to continue the charade with Maxis. Working alongside Schuster Groph is left to discover the power of the MPD."
-    },
-    {
-      "date": "FEBRUARY 2ND 1942",
-      "event": "In a speech to his staff, Groph talks optimistically about Griffin Station’s establishment as a permanent base of operations."
     }
   ],
   "10": [
+    {
+      "date": "FEBRUARY 2ND 1942",
+      "event": "In a speech to his staff, Groph talks optimistically about Griffin Station’s establishment as a permanent base of operations."
+    },
     {
       "date": "APRIL 17TH 1942",
       "event": "Maxis develops the Ray Gun prototype at the Rising Sun Facility. H. Porter works on developing the 2nd Generation Model."
@@ -296,7 +296,7 @@
       "event": "In his cell, Pablo writes of visions of a great war. He describes a \"great battle against strange demon-like creatures who were trying to devour the Earth.\" In his vision, he sees four knights protect him from certain death. He makes a note that the knights wore tunics similar to those in Der Eisendrache."
     },
     {
-      "date": "JUNE 4TH 1945 - NATCH DER UNTOTEN",
+      "date": "JUNE 4TH 1945 - NACHT DER UNTOTEN",
       "event": "An Allied plane malfunctions over an airfield and crashes. German Army trucks, transporting the undead and Element 115 between Group 935 facilities is struck in struck in the crash. The marines surviving the crash hold out against the undead as long as they can."
     },
     {
@@ -432,6 +432,24 @@
   ],
   "26": [
     {
+      "date": "OCTOBER 21ST 1945 - SHI NO NUMA",
+      "event": "Ultimis travels to the Rising Sun Facility to recover Richtofen's diary. Upon reading it, Richtofen begins to form his plan to defeat Samantha."
+    },
+    {
+      "date": "OCTOBER 28TH 1945 - DER REISE",
+      "event": "Ultimis returns to Der Reise. With his diary, Richtofen plans to use the teleporter to return to the moon and confront Samantha. Unfortunately the Wunderwaffe DG-2 overloads the teleporter and sends them through time - causing Richtofen to drop his diary."
+    },
+    {
+      "date": "NOVEMBER 5TH 1945",
+      "event": "Group 935 is disbanded."
+    },
+    {
+      "date": "JANUARY 19TH 1946",
+      "event": "The United States and the Soviet Union share the resources recovered from Group 935's various research stations. Richtofen's diary is among the items recovered by the Soviet Union."
+    }
+  ],
+  "27": [
+    {
       "date": "JANUARY 27TH 1946",
       "event": "The Pentagon hires many former Group 935 scientists in an effort to replicate their work."
     },
@@ -452,7 +470,7 @@
       "event": "Gersh and Yuri Zavoyski begin working for the Ascension Group."
     }
   ],
-  "27": [
+  "28": [
     {
       "date": "APRIL 25TH 1956",
       "event": "Explorers Brock and Gary discover Shangri-La. During an eclipse, they're unwittingly trapped in a time loop. Sally, sent back in time from 2011, is trapped in the same loop. Ultimis arrives in Shangri-La. With the help of Brock and Gary, they acquire the Focusing Stone."
@@ -468,13 +486,13 @@
     {
       "date": "NOVEMBER 11TH 1962",
       "event": "Gersh begins work on Project Thunder."
-    }
-  ],
-  "28": [
+    },
     {
       "date": "DECEMBER 12TH 1962",
       "event": "Gersh and Yuri begin work on the Gersh Device, codenamed Project Mercury."
-    },
+    }
+  ],
+  "29": [
     {
       "date": "JUNE 15TH 1963",
       "event": "The Pentagon begins development on their own version of the Wunderwaffe DG-2."
@@ -482,9 +500,7 @@
     {
       "date": "AUGUST 17TH 1963",
       "event": "The Pentagon begins development on their own version of the Winter's Howl."
-    }
-  ],
-  "29": [
+    },
     {
       "date": "OCTOBER 28TH 1963 - KINO DER TOTEN",
       "event": "From Der Reise, Ultimis teleports to Kino. This marks the first time Ultimis travels across space and time. Temporal Rifts occur across dimensions. In light of these developments, Monty feels obligated to step in, and begins to make changes in the background across time. He helps Group 935 invent Perk machines. He adds chalk drawings to walls. Little nudges. Ultimis locates a Lunar Lander and fly to the Ascension Facility."
@@ -492,13 +508,13 @@
     {
       "date": "OCTOBER 29TH 1963",
       "event": "Gersh informs the senior staff that Yuri has been removed from Project Mercury and has been transferred to Rocket Research."
-    },
-    {
-      "date": "OCTOBER 29TH 1963",
-      "event": "Yuri begins to notice the appearance of children's toys around the facility."
     }
   ],
   "30": [
+    {
+      "date": "OCTOBER 29TH 1963",
+      "event": "Yuri begins to notice the appearance of children's toys around the facility."
+    },
     {
       "date": "NOVEMBER 1ST 1963",
       "event": "Upon reading Richtofen's diary, Yuri begins to hear Samantha's voice. Over several days, her voice will consume him, driving him to resume work on the Gersh Device. He obeys."
@@ -506,23 +522,26 @@
     {
       "date": "NOVEMBER 4TH 1963",
       "event": "Gersh announces to the Committee that Project Thunder is nearing completion. gersh reveals Yuri may need to be removed from Ascension entirely, having observed his being \"hostile towards other scientists... and frequently observed muttering to himself.\""
-    },
-    {
-      "date": "NOVEMBER 5TH 1963",
-      "event": "Obeying Samantha's wishes, Yuri tricks Gersh into activating the Gersh Device. The rift created absorbs him and allows Samantha to travel through. Yuri is also absorbed and transported to the Pentagon."
     }
   ],
   "31": [
+    {
+      "date": "NOVEMBER 5TH 1963",
+      "event": "Obeying Samantha's wishes, Yuri tricks Gersh into activating the Gersh Device. The rift created absorbs him and allows Samantha to travel through. Yuri is also absorbed and transported to the Pentagon."
+    },
     {
       "date": "NOVEMBER 6TH 1963 - ASCENSION",
       "event": "Ultimis arrives at the Soviet Cosmodrome and free Gersh from the Casimir Mechanism. Richtofen recovers his diary, and learns that they need the Vril Device from the Siberian Facility for his plan. Maintaining his ethereal form, Gersh sends them into a rift to their next destination before beginning his travels across space and time."
     },
     {
       "date": "NOVEMBER 6TH 1963 - FIVE",
-      "event": "In the Pentagon, John F. Kennedy, Richard Nixon, and Robert McNamara meet with Fidel Castro in the aftermath of the Cuban Missile Crisis. Due to the events at the cosmodrome, a zombie outbreak occurs. Samantha sends Yuri to the Pentagon to thwart their survival. After Gersh is freed and Ultimis departs from the Cosmodrome, the outbreak ends at the Pentagon. All four survive."
+      "event": "In the Pentagon, John F. Kennedy, Richard Nixon, and Robert McNamara meet with Fidel Castro in the aftermath of the Cuban Missile Crisis. Due to the events at the cosmodrome, a zombie outbreak occurs. Samantha sends Yuri to the Pentagon to thwart their survival. -"
     }
   ],
   "32": [
+    {
+      "event": "After Gersh is freed and Ultimis departs from the Cosmodrome, the outbreak ends at the Pentagon. All four survive."
+    },
     {
       "date": "NOVEMBER 19TH 1963",
       "event": "In an effort to avoid another undead outbreak, the US Government creates the Broken Arrow program, establishing several facilities across the country. The Groom Lake Program is folded into Broken Arrow."
@@ -950,18 +969,18 @@
       "event": "Finn, Sal and Billy lure Al to the roof and kill him."
     },
     {
-      "date": "MOB OF THE DEAD",
-      "event": "Sal, Finn, Billy and Al battle waves of undead as they find themselves trapped in a seemingly endless cycle."
-    },
-    {
       "date": "JANUARY 11TH, 1934",
       "event": "Stepping through a rift, Richtofen secures the blood samples of Sal and Finn."
+    },
+    {
+      "date": "JANUARY 19TH, 1934",
+      "event": "Found guilty of Al’s murder, Sal, Finn and Billy are executed by electric chair."
     }
   ],
   "60": [
     {
-      "date": "JANUARY 19TH, 1934",
-      "event": "Found guilty of Al’s murder, Sal, Finn and Billy are executed by electric chair."
+      "date": "MOB OF THE DEAD",
+      "event": "Sal, Finn, Billy and Al battle waves of undead as they find themselves trapped in a seemingly endless cycle."
     },
     {
       "date": "APRIL 16TH, 1940",
@@ -1061,18 +1080,14 @@
     },
     {
       "date": "APRIL 21ST, 1944",
-      "event": "Jessica misses a call from her producer. He says he didn’t have a good feeling about the director and it didn’t work out. However he scored her a lead in a musical he and his partner are financing."
-    },
-    {
-      "date": "APRIL 21ST, 1944",
       "event": "Jessica kills the photographer and secures the incriminating photographs. Jack Kills the snitch who could turn him over to International Affairs. Floyd kills Tony the King in the boxing match and cash on his winnings. Nero Kills his wife in a \"work accident\", cashing in her life insurance policy to square away the debts."
-    }
-  ],
-  "67": [
+    },
     {
       "date": "APRIL 21ST, 1944",
       "event": "Richtofen arrives in Morg City to secure the Summoning Key."
-    },
+    }
+  ],
+  "67": [
     {
       "date": "APRIL 22ND, 1944",
       "event": "Richtofen learns The Reporter has the Summoning Key and confronts him. The Reporter waves Monty’s letter at Richtofen and orders him to stay away before attacking him. Richtofen kills the Reporter in self-defense."
@@ -1085,6 +1100,10 @@
     {
       "date": "APRIL 25TH, 1944 - SHADOWS OF EVIL",
       "event": "Nero, Jack, Floyd and Jessica are knocked unconscious at the Blake Lake Burlesque club. They wake up in a twisted version of Morg City, Shifted slightly from reality. Told they can atone for their sins by the Shadowman, all four are tricked into performing rituals. Jessica sacrifices her producer, Jake sacrifices his partner, Floyd sacrifices his promoter, and Nero sacrifices his lawyer. Completing the required rituals, the Apothicons are given access to Dimension 63. Realizing they’ve been duped, the four work with the Keepers to defeat the Shadowman. They trap him in the summoning key, but before they can hand it over to the Keepers, Primis Rictofen arrives and steals the key. Rictofen travels to Dimension 2210 to secure an innocent Rictofen soul. He delivers the soul to the House. From within the Summoning Key the Shadowman states, \"I’ll be seeing you…\""
+    },
+    {
+      "date": "APRIL 26TH, 1944",
+      "event": "The Apothicons destroy Dimension 63."
     }
   ],
   "69": [
@@ -1176,7 +1195,7 @@
     },
     {
       "date": "THE ARRIVAL OF EDWARD",
-      "event": "Richtofen collects Eddies innocent soul from Dimension 63 and Monty gives him a physical form in the House."
+      "event": "Richtofen collects Eddies innocent soul from Dimension 2210 and Monty gives him a physical form in the House."
     },
     {
       "date": "SAMANTHA MEETS EDWARD",
@@ -1211,169 +1230,163 @@
       "event": ""
     },
     {
-      "date": "Proditione Fracture",
+      "date": "DECEPTIO FRACTURE",
       "event": ""
     },
     {
-      "date": "APRIL 12TH, 1942",
-      "event": "Over ran by the undead, the rising sun facility is lost."
-    },
-    {
-      "date": "JULY 8TH, 1942",
-      "event": "Division 9 begins construction of the island facility."
-    },
-    {
-      "date": "NOVEMBER 5TH, 1942",
-      "event": "Takeo is dispatched by the emperor to oversee the work of Division 9 at the Island Facility."
+      "date": "OCTOBER 13TH, 1945 - THE GIANT",
+      "event": "As a zombie outbreak occurs, Primis Dempsey, Takeo and Nikolai confront Ultimis Richtofen moments after he teleports Maxis and Samantha. As they try to reason with him to wake their counterparts, Primis Richtofen arrives through the teleporter and kills his Ultimis self - triggering fractures across space-time. As Primis fights the undead, Group 935 secure the Dempsey subject and transport him to Der Eisendrache. Primis pursues them in a German Giant."
     }
   ],
   "77": [
     {
-      "date": "Agonia Fracture",
-      "event": ""
-    },
-    {
-      "date": "NOVEMBER 11TH, 1942",
-      "event": "Groph confirms that Division 9 has \"completed the resurrection of the ancient beasts for the battle on the eastern front.\" \"Reports suggest that the specimens are still extremely dangerous but the germans stalemate on the eastern front with the Russians will soon come to an end thanks to their involvement.\""
-    },
-    {
-      "date": "FEBRUARY 2ND, 1943",
-      "event": "The battle of Stalingrad doesn’t end. Thanks to technological advancements on both sides, world war 2 continues indefinitely."
-    },
-    {
-      "date": "FEBRUARY 6TH, 1943",
-      "event": "Division 9 expands experimentations to include use of prisoners of war, Division 9 staff, arachnids, and mystical beasts."
-    }
-  ],
-  "78": [
-    {
-      "date": "FEBRUARY 13TH, 1943",
-      "event": "Working with maxis at the Kino Facility. Sophia reveals she was attacked by subject two-six."
-    },
-    {
-      "date": "FEBRUARY 14TH, 1943",
-      "event": "Having learned Sophia was attacked by subject two-six, Maxis kills her and transfers her brain into a machine, the strategic operations planning heuristic intelligence analyzer."
-    },
-    {
-      "date": "JUNE 15TH, 1943",
-      "event": "Takeo reports to the emperor the work being done at the Island Facility is unacceptable."
-    },
-    {
-      "date": "JULY 7TH, 1943",
-      "event": "Sophia is transferred to Stalingrad to oversee group 935s operations."
-    },
-    {
-      "date": "NOVEMBER 16TH, 1943",
-      "event": "Sophia Confirms the existence of project Rasputin, the Russian Mangler Soldier."
-    }
-  ],
-  "79": [
-    {
-      "date": "JANUARY 11TH, 1944",
-      "event": "Sophia confirms the Russian Gigant Robot has set back the german advance."
-    },
-    {
-      "date": "JANUARY 3RD, 1945",
-      "event": "The Russians use stolen group 935 research to create the Russian Gigant, The Russian Mangler, and the Ray Gun Mark 3."
-    },
-    {
-      "date": "APRIL 4TH, 1945",
-      "event": "Sophia declares the battle of Stalingrad is nearing victory for German forces and that Valkyrie Drones have been deployed to locate any resistance strains and attempt capture. After the release of large concentrations of element 115 by German forces the city becomes largely populated by the undead. Nikolai and his comrades continue to fight for what remains of Stalingrad."
-    }
-  ],
-  "80": [
-    {
-      "date": "JULY 24TH, 1945",
-      "event": "On the orders of the emperor Takeo is taken prisoner by Division 9. He is used as a test subject for their Organic Plant based experiments."
-    },
-    {
-      "date": "JULY 24TH, 1945",
-      "event": "On the orders of the emperor Takeo is taken prisoner by Division 9. He is used as a test subject for their Organic Plant based experiments."
-    },
-    {
-      "date": "SEPTEMBER 2ND, 1945",
-      "event": "WW2 still rages on, Stalingrad has turned into a three way conflict between dragon, machine, and the undead. Without any remaining human survivors, Sophia is now trapped in the city."
-    },
-    {
-      "date": "SEPTEMBER 2ND, 1945",
-      "event": "Harvey Yena reports the dragons have proven beneficial to the war effort at stalingrad. He confirms that Die Glocke research continues to explore time displacement and movement across dimensions."
-    }
-  ],
-  "81": [
-    {
-      "date": "SEPTEMBER 13TH, 1945",
-      "event": "Cornelis attempts to send a transmission to Peter Mccain. Telling him to rendezvous at the abandoned Rising Sun facility."
-    },
-    {
-      "date": "OCTOBER 13TH, 1945 - THE GIANT",
-      "event": "As a zombie outbreak occurs, Primis Dempsey, Takeo, and Nikolai confront Ultimis Richtofen moments after he teleports Maxis and Samantha. As they try to reason with him to wake their counterparts. Primis Richtofen arrives through the teleporter and kill his Ultimis self, Triggering fractures across space and time. As Primis fights the undead, group 935 secure the Dempsey test subject and transport him to Der Eisendrache. Primis Pursues them in a German Giant."
-    },
-    {
-      "date": "OCTOBER 9TH, 1945",
-      "event": "With construction complete, Division 9 Continue their projects at the Island Facility."
-    }
-  ],
-  "82": [
-    {
-      "date": "OCTOBER 18TH, 1945 - ZETSUBOU NO SHIMA",
-      "event": "Primis secure Takeos soul after they help him commit Seppuku. Richtofen takes the crew to dimension 63 to collect their blood. For the insurance policy, they return to the island before traveling to their next destination."
-    },
-    {
-      "date": "OCTOBER 18TH, 1945",
-      "event": "Peter Mccain makes his jump into Shi No Numa as a temporal rift opens below him as a result of Primis Universe Fractures, the rift teleports him to Gorod Krovi."
-    },
-    {
       "date": "OCTOBER 29TH, 1945",
-      "event": "Doctor Groph takes control of group 935 in Richtofen's absence not realizing his fate at the hands of Primis."
-    }
-  ],
-  "83": [
+      "event": "Doctor Groph takes control of Group 935 in Richtofen’s absence, not realizing his fate at the hands of Primis."
+    },
     {
       "date": "OCTOBER 31ST, 1945",
-      "event": "In the wake of haunted dreams and rumors that Samantha may be roaming Griffith station, Groph worries the MPD may be corrupting the facility."
+      "event": "In the wake of haunted dreams and rumors that Samantha may be roaming Giffin Station, Groph worries the MPD may be corrupting the facility."
     },
     {
       "date": "NOVEMBER 5TH, 1945 - DER EISENDRACHE",
       "event": "Recovering the Dempsey test subject from a rocket bound for the moon, Richtofen secures his soul and reveals to primus his intention to set things right. Primis destroys Griffin Station and the Moon."
     },
     {
+      "date": "PRODITONE FRACTURE",
+      "event": ""
+    },
+    {
+      "date": "APRIL 12TH, 1942",
+      "event": "Overrun by the undead, the rising Sun Facility is lost."
+    }
+  ],
+  "78": [
+    {
+      "date": "JULY 8TH, 1942",
+      "event": "Division 9 begins construction of the Island Facility."
+    },
+    {
+      "date": "OCTOBER 9TH, 1942",
+      "event": "With construction complete, Division 9 continue their projects at the Island Facility."
+    },
+    {
+      "date": "NOVEMBER 5TH, 1942",
+      "event": "Takeo is dispatched by the Emperor to oversee the work of Division 9 at the Island Facility."
+    },
+    {
+      "date": "FEBRUARY 6TH, 1943",
+      "event": "Division 9 expands experimentation to include use of prisoners of war, Division 9 staff, arachnids and \"mystical beasts.\""
+    },
+    {
+      "date": "JUNE 15TH, 1943",
+      "event": "Takeo reports to the Emperor the work being done at the Island Facility is \"unacceptable.\""
+    }
+  ],
+  "79": [
+    {
+      "date": "JULY 24TH, 1943",
+      "event": "On the orders of the emperor Takeo is taken prisoner by Division 9. He is used as a test subject for their Organic Plant based experiments."
+    },
+    {
+      "date": "SEPTEMBER 13TH, 1945",
+      "event": "Cornelis attempts to send a transmission to Peter Mccain. Telling him to rendezvous at the abandoned Rising Sun facility."
+    },
+    {
+      "date": "OCTOBER 1ST, 1945 - ZETSUBOU NO SHIMA",
+      "event": "Primis secure Takeos soul after they help him commit Seppuku. Richtofen takes the crew to dimension 63 to collect \"their blood\". For the \"insurance policy\", they return to the island before traveling to their next destination."
+    },
+    {
+      "date": "OCTOBER 18TH, 1945",
+      "event": "Peter Mccain makes his jump into Shi No Numa as a temporal rift opens below him as a result of Primis Universe Fractures, the rift teleports him to Gorod Krovi."
+    }
+  ],
+  "80": [
+    {
+      "date": "AGONIA FRACTURE",
+      "event": ""
+    },
+    {
+      "date": "NOVEMBER 11TH, 1942",
+      "event": "Groph confirms that Division 9 has \"completed the resurrection of the ancient beasts for [the battle on the] eastern front.\" Reports suggest that the \"specimens... are still extremely dangerous... [but the German's] stalemate on the Eastern front with the Russians will soon come to an end\" thanks to their involvement."
+    },
+    {
+      "date": "JANUARY 3RD, 1943",
+      "event": "The Russians use stolen Group 935 research to create the Russian Gigant, the Russian Mangler and the Ray Gun Mark 3."
+    },
+    {
+      "date": "FEBRUARY 2ND, 1943",
+      "event": "The Battle of Stalingrad doesn’t end. Thanks to technological advancements on both sides, World War 2 continues indefinitely."
+    }
+  ],
+  "81": [
+    {
+      "date": "FEBRUARY 13TH, 1943",
+      "event": "Working with Maxis at the Kino facility, Sophia reveals she was attacked by Subject Two-Six."
+    },
+    {
+      "date": "FEBRUARY 14TH, 1943",
+      "event": "Having learned Sophia was attacked by Subject Two-Six, Maxis kills her and transfers her brain into a machine, the Strategic Operation Planning Heuristic Intelligence Analyzer (SOPHIA)."
+    },
+    {
+      "date": "JULY 7TH, 1943",
+      "event": "SOPHIA is transferred to Stalingrad to oversee Group 935’s operations."
+    },
+    {
+      "date": "SEPTEMBER 2ND, 1943",
+      "event": "Harvey Yena reports the dragons have proven beneficial the war effort at Stalingrad. Heconfirms that Die Glocke research continues to explore \"time displacement\" and \"movement across dimensions.\""
+    },
+    {
+      "date": "NOVEMBER 6TH, 1943",
+      "event": "SOPHIA confirms the existence of Project Rasputin, the Russian Mangler Soldier."
+    }
+  ],
+  "82": [
+    {
+      "date": "JANUARY 11TH, 1944",
+      "event": "SOPHIA confirms the Russian Gigant Robot has set back the German advance."
+    },
+    {
+      "date": "APRIL 14TH, 1945",
+      "event": "SOPHIA declares the Battle of Stalingrad is nearing victory for German Forces and that Valkyrie Drones have been deployed to locate \"any resistance strains and attempt capture.\" After the release of large concentrations of Element 115 by German forces, the city becomes largely populated by the undead. Nikolai and his comrades continue to fight for what remains of Stalingrad."
+    },
+    {
+      "date": "SEPTEMBER 2ND, 1945",
+      "event": "WW2 still rages on. Stalingrad has turned into a three-way conflict between Dragon, machine and the undead. Without any remaining human survivors, SOPHIA is now trapped in the city."
+    }
+  ],
+  "83": [
+    {
       "date": "NOVEMBER 6TH, 1945",
-      "event": "Drifting through space and time in his surreal form, Gersch arrives in the fracture."
+      "event": "Drifting through space and time in his ethereal form, Gersh arrives in the fracture."
     },
     {
       "date": "NOVEMBER 6TH, 1945 - GOROD KROVI",
       "event": "Primis arrives and frees Sophia and acquires Nikolais soul. Richtofen teleports the soul. Richtofen teleports the souls of Dempsey, Takeo, and Nikolai to Maxis at the house. Monty announces his existence to primis for the first time."
-    }
-  ],
-  "84": [
-    {
-      "date": "APRIL 25TH, 1953",
-      "event": "While traveling to Shangri La, Brock and Gary's Plane crashes in the mountains as a result of a freak atmospheric event. Another side effect of temporal rifts created by Primis while traveling to Gorod Krovi."
     },
     {
       "date": "NOVEMBER 6TH, 1963",
       "event": "Hiding in a closet at the Pentagon, Mcnamara records a message confirming that John F. Kennedy, Richard Nixon, and Fidel Castro have died as a result of a zombie outbreak. He dies moments later."
     }
   ],
-  "85": [
+  "84": [
     {
       "date": "TANK DEMPSEY - ULTIMIS",
       "event": "Tank Dempsey: American hero. Hand him a loaded weapon, a good woman, and something to shoot at and he is happy. Enrage him and he will rip your guts out and use them as a bandolier. Dempsey was selected for this mission after he showed his true grit during the Battle of Peleliu. Remarkable though it may seem, his unit was captured during the early raids before the main invasion, and he spent 2 weeks in a rat infested bamboo cage submerged in malarial water. Well that did not stop The Tank. After he gnawed his way through the cage, he then gnawed his way through his captors armed only with a Bobby pin and his Medal of Honor which he keeps secreted in various body cavities. Now you know there is no before the war for Dempsey, and there is no after. There is only the legend of Tank Dempsey, and how he will win the war for the rest of us."
     }
   ],
-  "86": [
+  "85": [
     {
       "date": "EDWARD RICHTOFEN - ULTIMIS",
-      "event": "\"Beware The Doc\". A message that was scrawled across walls of every town under Axis control. Starvation may cripple you, dysentery may wreck you, and gunfire may rip the flesh from your bones, but \"Beware the Doctor\". This is Dr. Richtofen, known affectionately as \"The Butcher\" to his victims as they scream in agony moments before he snuffs out their light. All through his career, Richtofen has been at the forefront of torture and information extraction research. Richtofen is an incurable sociopath and sees no moral distinction between natural death and murder; the victim is the victim, regardless of how their demise manifests itself. Doctor Richtofen has a collection of stuffed animals, most of them posed in positions of terror at the instant of their death."
+      "event": "\"Beware The Doc\". A message that was scrawled across walls of every town under Maxis' control. Starvation may cripple you, dysentery may wreck you, and gunfire may rip the flesh from your bones, but \"Beware the Doctor\". This is Dr. Richtofen, known affectionately as \"The Butcher\" to his victims as they scream in agony moments before he snuffs out their light. All through his career, Richtofen has been at the forefront of torture and information extraction research. Richtofen is an incurable sociopath and sees no moral distinction between natural death and murder; the victim is the victim, regardless of how their demise manifests itself. Doctor Richtofen has a collection of stuffed animals, most of them posed in positions of terror at the instant of their death."
     }
   ],
-  "87": [
+  "86": [
     {
       "date": "NIKOLAI BELINSKI - ULTIMIS",
       "event": "Stalin himself cannot stare Nikolai in the eye, no one can. There, in his eyes, you will see the soul of a man burning with the hatred of all things living. His closet is full of skeletons, many of them with the flesh still attached. Early in his career, Nikolai had quickly made his way up through the party ranks by killing the next man in line, and by marrying politically. Ultimately, his aspirations all came crashing down after his fifth wife mysteriously died while cleaning his axe with her neck. Little did he know that she had been sleeping with a high ranking party official on the side. This made Nikolai infamous, and his reputation spread quickly through the party. It was not long before Stalin himself had heard about Nikolai. More importantly, he feared Nikolai. As soon as the war started, our hero was dropped on the front lines and forgotten about, where he wallowed in self pity and vodka for several years. There are many weapons in his arsenal, not least of which is his breath."
     }
   ],
-  "88": [
+  "87": [
     {
       "date": "TAKEO MASAKI - ULTIMIS",
       "event": "Enter Takeo, for whom life has no meaning if not to perfect your discipline and to reveal true character and honor. Perhaps he ponders this and other philosophical questions as his Katana slices through the flesh and sinew of his enemy. Our hero was born into wealth; his family dynasty dates back several centuries, and throughout that time they have been highly decorated Samurai and Bushido. Well Takeo is no exception to this celebrated bloodline. Even when the family first saw the young, life-filled 5 year old Takeo playing in the street with his Katana and slicing the tails off terrified kittens. It was obvious he was destined to bring honor to the Masaki name. Reserved and reflective, the war is a perfect opportunity for Takeo to explore his blood lust and study the nature of those less honorable than himself, so if you fall victim to his swift action and might know that you have helped a man better than you reach enlightenment."
