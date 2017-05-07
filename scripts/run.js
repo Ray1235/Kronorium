@@ -5,6 +5,7 @@ var CurrentLanguageIndex = 0; // Index 0 should always be English
 
 var UseLargerPage = false;
 var UseAltFont = false;
+var UseLocalStorage = false;
 
 // TODO: Images
 // TODO: Language selector
@@ -50,22 +51,48 @@ function addLanguage(item, index) {
 }
 
 $(document).ready(function() {
+    if (typeof(Storage) !== "undefined") {
+        // Code for localStorage/sessionStorage.
+        UseLocalStorage = true;
+        console.log("LocalStorage supported!");
+        console.log(localStorage.UseAltFont);
+        console.log(localStorage.CurrentLanguageIndex);
+    } else {
+        // Sorry! No Web Storage support..
+        UseLocalStorage = false;
+        console.log("LocalStorage not supported!");
+    }
+
     // Check for alt-font
-    UseAltFont = (parseInt(getParameterByName("altfont")) > 0 ? true : false);
+    if (getParameterByName("altfont") != null) {
+        UseAltFont = (parseInt(getParameterByName("altfont")) > 0 ? true : false);
+        localStorage.UseAltFont = UseAltFont;
+    } else {
+        UseAltFont = (localStorage.UseAltFont != undefined ? localStorage.UseAltFont : false);
+    }
 
     // Add valid languages to language menu
     $("#language-menu").html(""); // clear that first
     validLanguages.forEach(addLanguage);
 
     // Set language based on URL, default is English
-    CurrentLanguageIndex = parseInt(getParameterByName("lang"));
-    console.log("Language index is " + CurrentLanguageIndex.toString());
+    if (getParameterByName("lang") != null) {
+        CurrentLanguageIndex = parseInt(getParameterByName("lang"));
+        console.log("Language index is " + CurrentLanguageIndex.toString());
 
-    // Check if language is in valid languages array
-    if (!isLanguageValid(CurrentLanguageIndex)) {
-        console.log("Language invalid, setting to 0");
-        CurrentLanguageIndex = 0;
+        // Check if language is in valid languages array
+        if (!isLanguageValid(CurrentLanguageIndex)) {
+            console.log("Language invalid, setting to 0");
+            CurrentLanguageIndex = 0;
+        }
+    } else {
+        // Set language based on user's localStorage
+        if (localStorage.CurrentLanguageIndex != undefined)
+            CurrentLanguageIndex = localStorage.CurrentLanguageIndex;
+        else
+            CurrentLanguageIndex = 0;
     }
+    localStorage.CurrentLanguageIndex = CurrentLanguageIndex;
 
     CurrentLanguage = validLanguages[CurrentLanguageIndex][0];
     UseLargerPage = validLanguages[CurrentLanguageIndex][3];
@@ -262,6 +289,6 @@ function getParameterByName(name, url) {
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
     if (!results) return null;
-    if (!results[2]) return '';
+    if (!results[2]) return null;
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
